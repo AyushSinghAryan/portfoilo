@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Portfoilo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 90px;
+      background-color: rgb(18, 18, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.5s;
+
+    }
+
+    nav ul li a:hover {
+      text-decoration: none;
+      color: rgb(117, 117, 211);
+
+    }
+    .checkbtn{
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+
+    main hr {
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      /* left right zero margin */
+      align-items: center;
+      margin: 130px 0;
+
+    }
+
+    .firstSection>div {
+      width: 40%;
+    }
+
+    .leftSection {
+      font-size: 3rem;
+
+
+    }
+    .leftSection .buttons{
+      padding: 50px 0;
+    }
+    .leftSection .btn{
+      padding: 12px;
+      background: #1e2167;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+
+    }
+    .rightSection img {
+      width: 80%;
+
+
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+
+    .secondSection h1 {
+      font-size: 1.9rem;
+    }
+
+    .secondSection .box {
+      background: white;
+      width: 83vw;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+    }
+
+    .secondSection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0 120px;
+    }
+
+    .purple {
+      animation: purpleAnim 2s alternate-reverse infinite;
+      color: #E7E9F3;
+      ;
+    }
+
+    .text-grey {
+      color: gray;
+    }
+
+    .image-top {
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+
+    .vertical-title {
+      position: relative;
+      top: 75px;
+      width: 150px;
+      font-size: 14px;
+    }
+
+    .vertical-desc {
+      position: relative;
+      color: grey;
+      top: 86px;
+      width: 150px;
+      font-size: 9px;
+    }
+    footer{
+      background-color: #0e0e1a;
+      /* height: 230px; */
+    }
+    .footer{
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
+
+    .footer ul{
+      list-style: none;
+    }
+
+    .footer > div{
+      width: 123px;
+    }
+    footer .footer-rights{
+      text-align: center;
+      color: grey;
+      padding: 12px 0;
+    }
+    @keyframes purpleAnim {
+      from {
+        text-shadow:
+          0 0 29px rgba(231, 233, 243, .7),
+          0 0 59px rgba(231, 233, 243, .7),
+          0 0 119px rgba(231, 233, 243, .7);
+      }
+
+      to {
+        text-shadow:
+          0 0 24px rgba(231, 233, 243, .7),
+          0 0 39px rgba(231, 233, 243, .7),
+          0 0 79px rgba(231, 233, 243, .7);
+      }
+    }
+
+    .purple:hover {
+      color: #fff;
+      text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #bc13fe,
+        0 0 82px #bc13fe,
+        0 0 92px #bc13fe,
+        0 0 102px #bc13fe,
+        0 0 151px #bc13fe;
+
+    }
+
+    .blue {
+      animation: blueAnim 2s alternate-reverse infinite;
+      color: #04E7FF;
+    }
+
+    @keyframes blueAnim {
+      from {
+        text-shadow:
+          0 0 19px rgba(4, 231, 255, .7),
+          0 0 49px rgba(4, 231, 255, .7),
+          0 0 109px rgba(4, 231, 255, .7);
+      }
+
+      to {
+        text-shadow:
+          0 0 14px rgba(4, 231, 255, .7),
+          0 0 29px rgba(4, 231, 255, .7),
+          0 0 69px rgba(4, 231, 255, .7);
+      }
+    }
+
+    .green {
+      animation: grrenAnim 2s alternate-reverse infinite;
+      color: #02FD0E;
+      ;
+    }
+
+    @keyframes grrenAnim {
+      from {
+        text-shadow:
+          0 0 19px rgba(2, 253, 14, .7),
+          0 0 49px rgba(2, 253, 14, .7),
+          0 0 109px rgba(2, 253, 14, .7);
+      }
+
+      to {
+        text-shadow:
+          0 0 14px rgba(2, 253, 14, .7),
+          0 0 29px rgba(2, 253, 14, .7),
+          0 0 69px rgba(2, 253, 14, .7);
+      }
+    }
+
+    .yellow {
+      animation: yellowAnim 2s alternate-reverse infinite;
+      color: #FFDB00;
+    }
+
+    @keyframes yellowAnim {
+      from {
+        text-shadow:
+          0 0 17px rgba(255, 219, 0, .7),
+          0 0 47px rgba(255, 219, 0, .7),
+          0 0 107px rgba(255, 219, 0, .7);
+      }
+
+      to {
+        text-shadow:
+          0 0 12px rgba(255, 219, 0, .7),
+          0 0 27px rgba(255, 219, 0, .7),
+          0 0 67px rgba(255, 219, 0, .7);
+      }
+    }
+
+    .red {
+      animation: redAnim 2s alternate-reverse infinite;
+      color: #FD1A02;
+    }
+
+    @keyframes redAnim {
+      from {
+        text-shadow:
+          0 0 19px rgba(253, 26, 2, .7),
+          0 0 49px rgba(253, 26, 2, .7),
+          0 0 109px rgba(253, 26, 2, .7);
+      }
+
+      to {
+        text-shadow:
+          0 0 14px rgba(253, 26, 2, .7),
+          0 0 29px rgba(253, 26, 2, .7),
+          0 0 69px rgba(253, 26, 2, .7);
+      }
+    }
+
+    @media (max-width:952px){
+      .left{
+        font-size: 30px;
+        padding-left: 50px;
+      }
+      nav ul li a{
+        font-size: 16px;
+      }
+    } 
+    @media(max-width:858px){
+      .checkbtn{
+        display: block;
+      }
+      .ulist{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #9c97f1;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #bc13fe;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- <input type="checkbox" id="check">  -->
+      
+      <div class="left">Ayush's Portfolio</div>
+      <div class="right">
+        <ul class="ulist">
+          <!-- always use list key andar anchor tag -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+      <label for="check" class="checkbtn">
+     
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Ayush</span>
+
+        <div>and I am a passionate</div>
+        
+        <div class="text blue">Web Developer</div>
+        <div class="buttons">
+          <button class="btn">Download Resume</button>
+          <button class="btn">Visit Github</button>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="dev3.png" alt="">
+      </div>
+    </section>
+    <hr>
+    <section class="secondSection">
+      <span class="text-grey">What I have done so far</span>
+      <h1>Past Experience</h1>
+
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="flutter.png" alt="">
+          <div class="vertical-title">
+            Flutter Developer (2021-2023)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maxime est possimus, optio praesentium
+            provident ipsam qui dolores, quis assumenda asperiores veritatis nesciunt!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="reactlogo.png" alt="">
+          <div class="vertical-title">
+            React Developer (2023-2025)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maxime est possimus, optio praesentium
+            provident ipsam qui dolores, quis assumenda asperiores veritatis nesciunt!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="appleLogo.png" alt="">
+          <div class="vertical-title">
+            SDE-1 Apple (2026-2030)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maxime est possimus, optio praesentium
+            provident ipsam qui dolores, quis assumenda asperiores veritatis nesciunt!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="starLogo.png" alt="">
+          <div class="vertical-title">
+            SDE-2 Starbucks  (2030-2032)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maxime est possimus, optio praesentium
+            provident ipsam qui dolores, quis assumenda asperiores veritatis nesciunt!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="image-top" src="NetflixLogo.png" alt="">
+          <div class="vertical-title">
+            SDE-3 Netflix (2032-2036)
+          </div>
+          <div class="vertical-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maxime est possimus, optio praesentium
+            provident ipsam qui dolores, quis assumenda asperiores veritatis nesciunt!
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Ayush's Developer Portfoilo</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+          
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+          
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="footer-rights">
+      Copyright &#169; ayushPortfolio.com | All rights reserved
+    </div>
+  </footer>
+  <script>
+    const words = ["Web Developer", "Flutter Developer", "Problem Solver", "Coder"],
+      colors = ["blue", "green", "yellow", "red"],
+      text = document.querySelector(".text");
+
+    // Generator (iterate from 0-3)
+    function* generator() {
+      var index = 0;
+      while (true) {
+        yield index++;
+
+        if (index > 3) {
+          index = 0;
+        }
+      }
+    }
+
+
+    // Printing effect
+    function printChar(word) {
+      let i = 0;
+      text.innerHTML = "";
+      text.classList.add(colors[words.indexOf(word)]);
+      let id = setInterval(() => {
+        if (i >= word.length) {
+          deleteChar();
+          clearInterval(id);
+        } else {
+          text.innerHTML += word[i];
+          i++;
+        }
+      }, 250);
+    }
+
+    // Deleting effect
+    function deleteChar() {
+      let word = text.innerHTML;
+      let i = word.length - 1;
+      let id = setInterval(() => {
+        if (i >= 0) {
+          text.innerHTML = text.innerHTML.substring(0, text.innerHTML.length - 1);
+          i--;
+        } else {
+          text.classList.remove(colors[words.indexOf(word)]);
+          printChar(words[gen.next().value]);
+          clearInterval(id);
+        }
+      }, 100);
+    }
+
+    // Initializing generator
+    let gen = generator();
+
+    printChar(words[gen.next().value]);
+
+  </script>
+</body>
+
+</html>
+
+<!-- contunie 57:00 -->
